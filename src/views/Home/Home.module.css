@@ -1,4 +1,10 @@
+:root{
+    --logo-padding:2rem;
+    --section-tb-margin: 50px;
+
+}
 .home{
+    display: grid;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     background-color: #fdd7dd;
@@ -20,17 +26,18 @@
     -webkit-text-fill-color: transparent;
 }
 .m_50_10{
-    margin: 50px 10%;
+    margin: 1.5rem 10%;
 }
-.clear_last_m{
+/* .clear_last_m{
     margin-bottom: 0;
     padding-bottom: 50px;
-}
+} */
 .main_img{
     height: 15rem;
     width: 100%;
     background-image: url("/public/fem1-m.jpg");
     background-size: cover;
+    background-position: center;
 }
 /* .main_img img{
     width: 100%;
@@ -81,3 +88,27 @@
 .search_container button:active, button:focus{
     box-shadow: rgb(116 82 113) 3px 3px 6px 0px inset, rgb(163 145 162 / 50%) -3px -3px 6px 1px inset
 }
+
+@media all and (min-width: 600px) {
+    .m_50_10, .logo{
+        margin: 1.5rem 20%;
+        text-align: left;
+    }
+    .logo{
+        padding: 0;
+
+    }
+    .home{
+        min-height: 100vh;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 4.5rem 13.5rem 7rem 4.5rem;
+    }
+    .main_img{
+        width: auto;
+        height: auto;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+  }
