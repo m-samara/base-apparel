@@ -3,24 +3,6 @@
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
-.logo{
-    padding: 2rem;
-    text-align: left;
-    word-spacing: 100vw;
-    letter-spacing: 0.4rem;
-    font-weight: 700;
-}
-.logo::first-letter{
-    font-weight: 400;
-    font-size: 2.5rem;
-    float: left;
-    color: transparent;
-    background: linear-gradient(90deg, rgba(254,193,203,1) 0%, rgba(197,136,146,1) 100%);
-    background-clip: text;
-    -moz-background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 .m_50_10{
     margin: 1.5rem 10%;
 }
@@ -83,13 +65,9 @@
     .main_content{
         align-self: center;
     }
-    .m_50_10, .logo{
+    .m_50_10{
         margin: 1.5rem 25%;
         text-align: left;
-    }
-    .logo{
-        padding: 0;
-
     }
     .home{
         min-height: 100vh;
