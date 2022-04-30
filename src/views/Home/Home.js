@@ -1,11 +1,12 @@
 import React from "react";
+import Logo from "../../components/Logo/Logo";
 import classes from "./Home.module.css";
 
 class Home extends React.Component {
   render() {
     return (
       <div className={classes.home}>
-        <div className={classes.logo}>OBASE APPAREL</div>
+        <Logo />
         <div className={classes.main_img}></div>
         <div className={classes.main_content}>
           <div className={classes.focused + " " + classes.m_50_10}>
