@@ -1,21 +1,17 @@
-:root{
-    --logo-padding:2rem;
-    --section-tb-margin: 50px;
-
-}
 .home{
     display: grid;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
-    background-color: #fdd7dd;
 }
 .logo{
     padding: 2rem;
     text-align: left;
     word-spacing: 100vw;
-    letter-spacing: 6px;
+    letter-spacing: 0.4rem;
+    font-weight: 700;
 }
 .logo::first-letter{
+    font-weight: 400;
     font-size: 2.5rem;
     float: left;
     color: transparent;
@@ -28,10 +24,6 @@
 .m_50_10{
     margin: 1.5rem 10%;
 }
-/* .clear_last_m{
-    margin-bottom: 0;
-    padding-bottom: 50px;
-} */
 .main_img{
     height: 15rem;
     width: 100%;
@@ -39,15 +31,12 @@
     background-size: cover;
     background-position: center;
 }
-/* .main_img img{
-    width: 100%;
-    height: 100%;
-} */
 .focused{
     word-spacing: 100vw;
     font-size: 3.5rem;
     letter-spacing: 12px;
     font-weight: 600;
+    color: #323232;
 }
 .focused::first-line{
     color: pink;
@@ -71,6 +60,7 @@
 .search_container input {
     flex-grow: 1;
     padding-left: 1.5rem;
+    min-width: 9rem;
 }
 .search_container input::placeholder {
     font-family: 'Courier New', Courier, monospace;
@@ -90,8 +80,11 @@
 }
 
 @media all and (min-width: 600px) {
+    .main_content{
+        align-self: center;
+    }
     .m_50_10, .logo{
-        margin: 1.5rem 20%;
+        margin: 1.5rem 25%;
         text-align: left;
     }
     .logo{
@@ -101,7 +94,7 @@
     .home{
         min-height: 100vh;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 4.5rem 13.5rem 7rem 4.5rem;
+        grid-template-rows: 4.5rem 1fr;
     }
     .main_img{
         width: auto;
