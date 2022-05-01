@@ -53,6 +53,7 @@ class Home extends React.Component {
             <PinkInput
               value={this.state.email}
               name="email"
+              placeholder="Email Address"
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
             />

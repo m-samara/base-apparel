@@ -4,7 +4,7 @@ import classes from "../Home.module.css";
 const PinkInput = (props) => {
   return (
     <div className={classes.search_container}>
-      <input value={props.value} name={props.name} onChange={props.handleChange} placeholder="Email Address" />
+      <input value={props.value} name={props.name} onChange={props.handleChange} placeholder={props.placeholder} />
       <button onClick={props.handleSubmit}>&gt;</button>
     </div>
   );
