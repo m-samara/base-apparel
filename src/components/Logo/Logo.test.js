@@ -1,10 +1,8 @@
-import { render } from '@testing-library/react';
-import Logo from './Logo';
- 
-describe('<Logo />', () => {
- 
-    it('renders the logo', () => {
-        const {container} = render(<Logo/>);
-        expect(container).toMatchSnapshot();
-    });
+import { render, screen } from "@testing-library/react";
+import Logo from "./Logo";
+
+test("render the logo", () => {
+  render(<Logo />);
+  const LogoElement = screen.getByText(/OBASE APPAREL/i);
+  expect(LogoElement).toBeInTheDocument();
 });
