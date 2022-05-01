@@ -43,6 +43,9 @@
     flex-grow: 1;
     padding-left: 1.5rem;
     min-width: 9rem;
+    color: #c58892;
+    font-weight: 600;
+    font-size: 1rem;
 }
 .search_container input::placeholder {
     font-family: 'Courier New', Courier, monospace;
@@ -57,7 +60,7 @@
     background: rgb(254,193,203);
     background: linear-gradient(90deg, rgba(254,193,203,1) 0%, rgba(197,136,146,1) 100%);
 }
-.search_container button:active, button:focus{
+.search_container button:active{
     box-shadow: rgb(116 82 113) 3px 3px 6px 0px inset, rgb(163 145 162 / 50%) -3px -3px 6px 1px inset
 }
 
